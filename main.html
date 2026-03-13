@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+ <link rel="stylesheet" href="style.css">
+<style>
+.login-container{
+  margin: auto;
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border: 1px solid #ccc;
+}
+.error{
+  color: red;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<h2 align="center">Registration Form</h2>
+<div class="login-container">
+<form onsubmit="return validateForm()">
+<label>Name</label><br>
+<input type="text" id="name"><br>
+<span id="nameErr" class="error"></span><br>
+<label>Email</label><br>
+<input type="text" id="email"><br>
+<span id="emailErr" class="error"></span><br>
+<label>Password</label><br>
+<input type="password" id="password"><br>
+<span id="passErr" class="error"></span><br>
+<label>Confirm Password</label><br>
+<input type="password" id="confirmPassword"><br>
+<span id="confirmErr" class="error"></span><br>
+<label>Phone</label><br>
+<input type="text" id="phone"><br>
+<span id="phoneErr" class="error"></span><br>
+<label>Gender</label><br>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Others<br>
+<span id="genderErr" class="error"></span><br>
+<input type="checkbox" id="agreeBox"> I agree to Terms & Conditions<br>
+<span id="agreeErr" class="error"></span><br>
+<div align="center">
+<button type="submit">Submit</button>
+</div>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
